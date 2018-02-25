@@ -1,0 +1,864 @@
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+Command: synth_design -top Datapath -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 388.301 ; gain = 98.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Datapath' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Datapath.v:13]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32Bit2To1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (1#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32Bit2To1.v:13]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (2#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PCAdder.v:24]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (3#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PCAdder.v:24]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/InstructionMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (4#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/InstructionMemory.v:38]
+INFO: [Synth 8-638] synthesizing module 'PipelineRegIF_ID' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegIF_ID.v:14]
+INFO: [Synth 8-256] done synthesizing module 'PipelineRegIF_ID' (5#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegIF_ID.v:14]
+INFO: [Synth 8-638] synthesizing module 'Controller' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Controller.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (6#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Controller.v:14]
+INFO: [Synth 8-638] synthesizing module 'Mux25Bit2To1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux25Bit2To1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux25Bit2To1' (7#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux25Bit2To1.v:13]
+INFO: [Synth 8-638] synthesizing module 'HazardControl' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/HazardControl.v:13]
+INFO: [Synth 8-256] done synthesizing module 'HazardControl' (8#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/HazardControl.v:13]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:45]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (9#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:45]
+INFO: [Synth 8-638] synthesizing module 'BranchModule' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/BranchModule.v:14]
+INFO: [Synth 8-256] done synthesizing module 'BranchModule' (10#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/BranchModule.v:14]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/SignExtension.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (11#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/SignExtension.v:13]
+INFO: [Synth 8-638] synthesizing module 'LowerHalfExtender' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/LowerHalfExtender.v:14]
+INFO: [Synth 8-256] done synthesizing module 'LowerHalfExtender' (12#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/LowerHalfExtender.v:14]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux5Bit2To1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (13#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux5Bit2To1.v:13]
+INFO: [Synth 8-638] synthesizing module 'PipeLineRegID_EX' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegID_EX.v:14]
+INFO: [Synth 8-256] done synthesizing module 'PipeLineRegID_EX' (14#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegID_EX.v:14]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit4To1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32Bit4To1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit4To1' (15#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32Bit4To1.v:13]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ALU32Bit.v:37]
+INFO: [Synth 8-638] synthesizing module 'RotateRight' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RotateRight.v:13]
+INFO: [Synth 8-256] done synthesizing module 'RotateRight' (16#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RotateRight.v:13]
+INFO: [Synth 8-638] synthesizing module 'Mux32x1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32To1.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Mux32x1' (17#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux32To1.v:14]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (18#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ALU32Bit.v:37]
+INFO: [Synth 8-638] synthesizing module 'HiLoReg' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/HiLoReg.v:13]
+INFO: [Synth 8-256] done synthesizing module 'HiLoReg' (19#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/HiLoReg.v:13]
+INFO: [Synth 8-638] synthesizing module 'SignExtendByte' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/SignExtendByte.v:13]
+INFO: [Synth 8-256] done synthesizing module 'SignExtendByte' (20#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/SignExtendByte.v:13]
+INFO: [Synth 8-638] synthesizing module 'MovComponent' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/MovComponent.v:13]
+INFO: [Synth 8-256] done synthesizing module 'MovComponent' (21#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/MovComponent.v:13]
+INFO: [Synth 8-638] synthesizing module 'Mux1Bit2To1' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux1Bit2To1.v:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux1Bit2To1' (22#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Mux1Bit2To1.v:13]
+INFO: [Synth 8-638] synthesizing module 'ForwardingUnit' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ForwardingUnit.v:15]
+INFO: [Synth 8-256] done synthesizing module 'ForwardingUnit' (23#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ForwardingUnit.v:15]
+INFO: [Synth 8-638] synthesizing module 'PipelineRegEX_MEM' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegEX_MEM.v:14]
+INFO: [Synth 8-256] done synthesizing module 'PipelineRegEX_MEM' (24#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegEX_MEM.v:14]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (25#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/DataMemory.v:38]
+INFO: [Synth 8-638] synthesizing module 'PipelineRegMEM_WB' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegMEM_WB.v:14]
+INFO: [Synth 8-256] done synthesizing module 'PipelineRegMEM_WB' (26#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegMEM_WB.v:14]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (27#1) [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/Datapath.v:13]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[5]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[4]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[3]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[2]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[1]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[0]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[31]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[30]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[29]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[28]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[27]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 442.680 ; gain = 152.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 442.680 ; gain = 152.828
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [V:/Projects/32BitProcessor/32BitProcessor.srcs/constrs_1/imports/new/const.xdc]
+Finished Parsing XDC File [V:/Projects/32BitProcessor/32BitProcessor.srcs/constrs_1/imports/new/const.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 808.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 808.809 ; gain = 518.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 808.809 ; gain = 518.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 808.809 ; gain = 518.957
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Registers_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "in210" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ALU32Bit.v:65]
+INFO: [Synth 8-5545] ROM "movz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[31]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[30]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[29]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[28]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[27]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[26]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[25]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[24]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[23]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[22]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[21]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[20]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[19]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[18]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[17]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[16]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[15]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[14]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[13]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[12]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[11]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[10]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[9]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[8]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[7]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[6]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[5]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[4]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[3]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[2]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[1]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Registers_reg[0]' [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/RegisterFile.v:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:01:04 . Memory (MB): peak = 808.809 ; gain = 518.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	 513 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     25 Bit        Muxes := 24    
+	   7 Input     25 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 22    
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 49    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Mux32Bit2To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module PCAdder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	 513 Input     32 Bit        Muxes := 1     
+Module PipelineRegIF_ID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 23    
+	   7 Input     25 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 22    
+	   3 Input     20 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+Module Mux25Bit2To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module BranchModule 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module Mux5Bit2To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module PipeLineRegID_EX 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+Module Mux32Bit4To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU32Bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module MovComponent 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module Mux1Bit2To1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ForwardingUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module PipelineRegEX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module PipelineRegMEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ctrlOut52" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ctrlOut221" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "in210" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/ALU32Bit.v:68]
+DSP Report: Generating DSP mulFull, operation Mode is: A*B.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: Generating DSP mulFull, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: Generating DSP mulFull, operation Mode is: A*B.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: Generating DSP mulFull, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: operator mulFull is absorbed into DSP mulFull.
+DSP Report: Generating DSP multu, operation Mode is: A*B.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: Generating DSP multu, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: Generating DSP multu, operation Mode is: A*B.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: Generating DSP multu, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu is absorbed into DSP multu.
+DSP Report: operator multu is absorbed into DSP multu.
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[5]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[4]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[3]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[2]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[1]
+WARNING: [Synth 8-3331] design MovComponent has unconnected port functIn[0]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[31]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[30]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[29]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[28]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[27]
+WARNING: [Synth 8-3331] design BranchModule has unconnected port immi[26]
+INFO: [Synth 8-3886] merging instance 'IF_ID/instruction_Out_reg[6]' (FDE) to 'IF_ID/instruction_Out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'IF_ID/instruction_Out_reg[7]' (FDE) to 'IF_ID/instruction_Out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'IF_ID/instruction_Out_reg[8]' (FDE) to 'IF_ID/instruction_Out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[0]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[1]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[2]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[3]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[4]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[5]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[6]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[7]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[8]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[9]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[10]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[11]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[12]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[13]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/upperImmediate_Out_reg[14]' (FD) to 'ID_EX/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ID_EX/\upperImmediate_Out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[15]' (FD) to 'ID_EX/signExtend_Out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[16]' (FD) to 'ID_EX/signExtend_Out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[17]' (FD) to 'ID_EX/signExtend_Out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[18]' (FD) to 'ID_EX/signExtend_Out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[19]' (FD) to 'ID_EX/signExtend_Out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[20]' (FD) to 'ID_EX/signExtend_Out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[21]' (FD) to 'ID_EX/signExtend_Out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[22]' (FD) to 'ID_EX/signExtend_Out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[23]' (FD) to 'ID_EX/signExtend_Out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[24]' (FD) to 'ID_EX/signExtend_Out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[25]' (FD) to 'ID_EX/signExtend_Out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[26]' (FD) to 'ID_EX/signExtend_Out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[27]' (FD) to 'ID_EX/signExtend_Out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[28]' (FD) to 'ID_EX/signExtend_Out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[29]' (FD) to 'ID_EX/signExtend_Out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'ID_EX/signExtend_Out_reg[30]' (FD) to 'ID_EX/signExtend_Out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[0]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[1]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[2]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[3]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[4]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[5]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[6]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[7]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[8]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[9]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[10]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[11]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[12]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[13]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'EX_MEM/upperImmediate_Out_reg[14]' (FD) to 'EX_MEM/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (EX_MEM/\upperImmediate_Out_reg[15] )
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[0]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[1]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[2]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[3]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[4]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[5]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[6]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[7]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[8]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[9]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[10]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[11]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[12]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[13]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'MEM_WB/upperImmediate_Out_reg[14]' (FD) to 'MEM_WB/upperImmediate_Out_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MEM_WB/\upperImmediate_Out_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[5]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[4]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[3]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[2]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[1]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (funct_Out_reg[0]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (signMux_Out_reg) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (upperImmediate_Out_reg[15]) is unused and will be removed from module PipeLineRegID_EX.
+WARNING: [Synth 8-3332] Sequential element (upperImmediate_Out_reg[15]) is unused and will be removed from module PipelineRegEX_MEM.
+WARNING: [Synth 8-3332] Sequential element (upperImmediate_Out_reg[15]) is unused and will be removed from module PipelineRegMEM_WB.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:56 . Memory (MB): peak = 808.809 ; gain = 518.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------------+-----------+----------------------+------------------+
+|Datapath    | MEM_DataMemory/memory_reg | Implied   | 256 x 32             | RAM256X1S x 32   | 
++------------+---------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU32Bit    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU32Bit    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:02:46 . Memory (MB): peak = 880.699 ; gain = 590.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:03:23 . Memory (MB): peak = 1002.555 ; gain = 712.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives       | 
++------------+---------------------------+-----------+----------------------+------------------+
+|Datapath    | MEM_DataMemory/memory_reg | Implied   | 256 x 32             | RAM256X1S x 32   | 
++------------+---------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \ID_RegisterFile/Registers_reg[0][17]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:03:35 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [V:/Projects/32BitProcessor/32BitProcessor.srcs/sources_1/imports/new/PipelineRegMEM_WB.v:63]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:16 ; elapsed = 00:03:41 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:16 ; elapsed = 00:03:41 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:18 ; elapsed = 00:03:44 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:18 ; elapsed = 00:03:44 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:18 ; elapsed = 00:03:44 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:03:44 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |    12|
+|2     |CARRY4    |   130|
+|3     |DSP48E1   |     8|
+|4     |LUT1      |   205|
+|5     |LUT2      |   389|
+|6     |LUT3      |   280|
+|7     |LUT4      |   337|
+|8     |LUT5      |   353|
+|9     |LUT6      |  1862|
+|10    |MUXF7     |   278|
+|11    |RAM256X1S |    32|
+|12    |FDRE      |   505|
+|13    |FD_1      |    64|
+|14    |LD        |  1024|
+|15    |IBUF      |     2|
+|16    |OBUF      |   166|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------+------------------+------+
+|      |Instance               |Module            |Cells |
++------+-----------------------+------------------+------+
+|1     |top                    |                  |  5647|
+|2     |  ID_RegisterFile      |RegisterFile      |  1920|
+|3     |  EX_MovMux            |Mux1Bit2To1       |     0|
+|4     |  EX_FwdUnit           |ForwardingUnit    |     0|
+|5     |  EX_ALU               |ALU32Bit          |   851|
+|6     |    Mux32x1_0          |Mux32x1           |   125|
+|7     |    RotateRight_0      |RotateRight       |   185|
+|8     |    RotateRight_1      |RotateRight_15    |   153|
+|9     |  EX_ALUSrcA_Mux       |Mux32Bit2To1      |    65|
+|10    |  EX_ALUSrcB_Mux       |Mux32Bit2To1_0    |    53|
+|11    |  EX_DataSel           |Mux32Bit4To1      |    32|
+|12    |  EX_ExeDataMux        |Mux32Bit2To1_1    |    32|
+|13    |  EX_HiLo              |HiLoReg           |   208|
+|14    |  EX_HiLoMux           |Mux32Bit2To1_2    |     0|
+|15    |  EX_MEM               |PipelineRegEX_MEM |   109|
+|16    |  EX_MovComponent      |MovComponent      |     9|
+|17    |  EX_RegDestMux        |Mux5Bit2To1       |     5|
+|18    |  EX_RegExtendByte     |SignExtendByte    |     0|
+|19    |  EX_RegExtendHalf     |SignExtension     |     0|
+|20    |  EX_rsFwdMux          |Mux32Bit4To1_3    |    96|
+|21    |  EX_rtFwdMux          |Mux32Bit4To1_4    |   346|
+|22    |  ID_BranchModule      |BranchModule      |   118|
+|23    |  ID_Controller        |Controller        |   132|
+|24    |  ID_CtrlStallMux      |Mux25Bit2To1      |    22|
+|25    |  ID_EX                |PipeLineRegID_EX  |   762|
+|26    |  ID_HazCtrlUnit       |HazardControl     |     4|
+|27    |  ID_JalDataMux        |Mux32Bit2To1_5    |    32|
+|28    |  ID_JalRegMux         |Mux5Bit2To1_6     |     5|
+|29    |  ID_SignExtension     |SignExtension_7   |     0|
+|30    |  ID_UpperImmediate    |LowerHalfExtender |     0|
+|31    |  ID_rsFwdMux          |Mux32Bit2To1_8    |    32|
+|32    |  ID_rtFwdMux          |Mux32Bit2To1_9    |    32|
+|33    |  IF_ID                |PipelineRegIF_ID  |   104|
+|34    |  IF_InstructionMemory |InstructionMemory |    58|
+|35    |  IF_Mux               |Mux32Bit2To1_10   |    32|
+|36    |  IF_PCAdder           |PCAdder           |     9|
+|37    |  IF_ProgramCounter    |ProgramCounter    |    32|
+|38    |  MEM_DataMemory       |DataMemory        |    96|
+|39    |  MEM_DataSel          |Mux32Bit4To1_11   |    64|
+|40    |  MEM_MemExtendByte    |SignExtendByte_12 |     0|
+|41    |  MEM_MemExtendHalf    |SignExtension_13  |     0|
+|42    |  MEM_WB               |PipelineRegMEM_WB |   126|
+|43    |  WB_MemToRegMux       |Mux32Bit4To1_14   |    80|
++------+-----------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:03:44 . Memory (MB): peak = 1055.176 ; gain = 765.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 183 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:52 ; elapsed = 00:03:19 . Memory (MB): peak = 1055.176 ; gain = 399.195
+Synthesis Optimization Complete : Time (s): cpu = 00:02:19 ; elapsed = 00:03:45 . Memory (MB): peak = 1055.176 ; gain = 765.324
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1538 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1120 instances were transformed.
+  FD_1 => FDRE (inverted pins: C): 64 instances
+  LD => LDCE: 1024 instances
+  RAM256X1S => RAM256X1S (inverted pins: WCLK) (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 167 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:03:56 . Memory (MB): peak = 1055.176 ; gain = 778.199
+INFO: [Common 17-1381] The checkpoint 'V:/Projects/32BitProcessor/32BitProcessor.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 1055.176 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 25 02:34:27 2018...
